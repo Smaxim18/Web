@@ -1,0 +1,134 @@
+﻿@charset "UTF-8";
+*
+{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+}
+p
+    {
+    text-indent: 30px;
+    margin-top: 33px;
+    font-size: 25px;
+    text-align: left;
+    margin-left: 15px;
+}
+section
+{
+    position: relative;
+    width: 100%;
+    height: 850px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+}
+section:nth-child(odd)
+{
+    background: #83ffdd;
+}
+section:nth-child(even)
+{
+    background: #8ed7ff;
+}
+nav
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    background: #083353;
+}
+nav a
+{
+    position: relative;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 3px 25px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    display: inline-block;
+}
+nav a:hover,
+section#n1:hover~nav a[href="#n1"],
+section#n2:hover~nav a[href="#n2"],
+section#n3:hover~nav a[href="#n3"],
+section#n4:hover~nav a[href="#n4"],
+section#n5:hover~nav a[href="#n5"]
+{
+    color: #0e3e44;
+    background: #a8e9f1;
+}
+nav a:active
+{
+    background: #94fab3;
+}
+::-webkit-scrollbar
+{
+    display: none;
+}
+
+
+.title h1
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 43px;
+    margin-bottom: 50px;
+    color: #fcfffc;
+}
+.title span
+{
+    color: red;
+}
+.list_menu a
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: #fcfffc;
+    border-left: 2px solid red;
+    padding-left: 5px;
+    transition: all 0.2s ease;
+}
+.list_menu a:hover
+{
+    border-left: 2px solid blue;
+    padding-left: 10px;
+    transition: all 0.2s ease;
+}
+.footer_menu p
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #fcfffc;
+}
+.list_menu
+{
+    margin-bottom: 50px;
+}
+.list_menu li
+{
+    margin: 20px 0;
+}
+.menu
+{
+    padding: 25vh 50px;
+    position: fixed;
+    background: black;
+    height: 100vh;
+    backdrop-filter: blur(16px);
+    border-right: 7px solid #000;
+    left: -345px;
+    transition: all 0.2s ease;
+}
+.menu:hover
+{
+    left: 0;
+    transition: all 0.2s ease;
+}
